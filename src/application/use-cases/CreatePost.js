@@ -1,5 +1,4 @@
 const Post = require('../../domain/entities/Post');
-
 class CreatePost {
   constructor(postRepository, eventProducer) {
     this.postRepository = postRepository;

@@ -1,4 +1,4 @@
-const kafka = require('./kafkaclient');
+const kafka = require('./kafkaClient');
 const producer = kafka.producer();
 
 const publishPostCreated = async (post) => {

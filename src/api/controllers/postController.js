@@ -1,7 +1,6 @@
 const CreatePost = require('../../application/use-cases/CreatePost');
 const MongoPostRepository = require('../../infrastructure/database/MongoPostRepository');
-const { publishPostCreated } = require('../../infrastructure/messaging/Postproducer');
-
+const { publishPostCreated } = require('../../infrastructure/messaging/PostProducer');
 const postRepository = new MongoPostRepository();
 const createPostUseCase = new CreatePost(postRepository, publishPostCreated);
 

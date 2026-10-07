@@ -1,4 +1,4 @@
-const kafka = require('./kafkaclient');
+const kafka = require('./kafkaClient');
 const consumer = kafka.consumer({ groupId: 'post-consumers' });
 
 const runConsumer = async () => {

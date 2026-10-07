@@ -13,6 +13,9 @@ services:
     depends_on:
       - mongo
       - kafka
+    links:
+      - mongo
+      - kafka
 
   mongo:
     image: mongo:6.0
